@@ -388,7 +388,9 @@ top_build_prefix = @top_build_prefix@
 top_builddir = @top_builddir@
 top_srcdir = @top_srcdir@
 AM_CPPFLAGS = -I$(srcdir)/../include
-AM_LDFLAGS = -L/usr/local/lib/fst -lfstfar -lfst -lm -ldl
+AM_LDFLAGS = -L/usr/local/lib/fst -lfstfarscript -lfstfar -lfstscript -lfst \
+             -lm -ldl
+
 dist_noinst_SCRIPTS = ngramdisttrain.sh ngramfractrain.sh
 ngramapply_SOURCES = ngramapply.cc ngramapply-main.cc
 ngramapply_LDADD = ../lib/libngram.la
